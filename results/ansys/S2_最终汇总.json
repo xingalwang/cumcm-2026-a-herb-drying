@@ -1,0 +1,76 @@
+{
+  "run": "D:\\codex\\数模国赛\\b.Agent工作区\\ANSYS_S2\\runs\\final_200",
+  "config": {
+    "nr": 200,
+    "nz": 2,
+    "dt_s": 1,
+    "end_s": 10800,
+    "output_dt_s": 1,
+    "length_m": 0.25,
+    "temperature_feedback_in_D": true,
+    "method": "elementwise old-state coefficients, backward Euler, two independent PLANE55 meshes",
+    "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "property_source": "appendix 3 for the entire trajectory",
+    "latent": false,
+    "end_faces": "zero flux",
+    "h": 25,
+    "hm": 8e-07
+  },
+  "status": {
+    "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s2_iz96r9fk",
+    "command": [
+      "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+      "-b",
+      "-smp",
+      "-np",
+      "2",
+      "-p",
+      "ansys",
+      "-dir",
+      "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s2_iz96r9fk",
+      "-j",
+      "s2",
+      "-i",
+      "input.dat",
+      "-o",
+      "solve.out"
+    ],
+    "pid": 3752,
+    "start_epoch": 1789199699.9571152,
+    "input_sha256": "c2ab04aeed639714da43a78380bb9144d893b6828fcb8cff4de487be7dbc037c",
+    "success": true,
+    "errors": [
+      "0"
+    ],
+    "warnings": [
+      "11600"
+    ],
+    "returncode": 0,
+    "seconds": 1301.6834964752197,
+    "T_center": 49.84941331927424,
+    "T_surface": 49.96637601875354,
+    "C_center": 1.766240385766292,
+    "C_surface": 1.008143089426486,
+    "axial_max_T": 2.7569058147491887e-12,
+    "axial_max_C": 1.9095836023552692e-14
+  },
+  "metrics": {
+    "T": {
+      "max_abs_six_times": 9.426734944431253,
+      "rmse_six_times": 6.483284861613129,
+      "center_3h": 45.84804066115577,
+      "surface_3h": 47.14069061658373
+    },
+    "C": {
+      "max_abs_six_times": 0.619781965450868,
+      "rmse_six_times": 0.36399236739262475,
+      "center_3h": 2.385964170204469,
+      "surface_3h": 1.347502525368618
+    }
+  },
+  "notes": [
+    "最终ANSYS运行已完成，六时刻图从保存字段抽取。",
+    "该ANSYS实现为逐步滞后物性双向耦合，不是每步Picard全隐式收敛。",
+    "圆截面是轴对称结果重建，不是额外二维平面求解。"
+  ]
+}

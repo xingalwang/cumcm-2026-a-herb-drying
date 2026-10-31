@@ -1,0 +1,5 @@
+numpy>=2.0
+scipy
+pandas
+openpyxl
+matplotlib

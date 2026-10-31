@@ -1,0 +1,105 @@
+{
+  "S1_geometry_weights": {
+    "pass": true,
+    "got": {
+      "V0": 0.0078125,
+      "V1": 0.0625,
+      "V4": 0.1171875,
+      "sum": 0.5
+    },
+    "max_abs_err": 0.0,
+    "sum_identity_rel_err_R0N200": 1.3552527156068805e-16
+  },
+  "S2_zero_flux_constant": {
+    "pass": true,
+    "max_dC": 3.552713678800501e-15,
+    "max_dT": 1.3145040611561853e-13
+  },
+  "S3_bessel_limit": {
+    "pass": true,
+    "max_abs_err_K": 0.0004908318665997058,
+    "T_center_num": 43.962583770171776,
+    "T_center_ana": 43.963074602038375,
+    "T_surf_num": 46.63827229875765,
+    "T_surf_ana": 46.638542501526814,
+    "Bi": 1.3888888888888888,
+    "alpha": 1.6885553470919323e-07,
+    "lam_1to5": [
+      1.4184725188270626,
+      4.166469601015177,
+      7.2084784643809385,
+      10.308273153518044,
+      13.42716138632601
+    ],
+    "sum_Bn": 0.9999995798295174,
+    "sum_Cn": 0.9987532339506585,
+    "Bi_check": 1.3888888888888888
+  },
+  "S3b_surface_form_order": {
+    "pass": true,
+    "err_node_N200_N400": [
+      0.0004937631242398766,
+      0.0004908318665997058
+    ],
+    "err_series_N200_N400": [
+      0.01990611105684792,
+      0.010200975581405203
+    ],
+    "node_rel_change": 0.00593656653619748,
+    "series_ratio_N200_over_N400": 1.9513928739456718,
+    "T_surf_ana": 46.638542501526814,
+    "T_surf_node_N400": 46.63827229875765,
+    "T_surf_series_N400": 46.630007172910055,
+    "verdict": "node-centered FV must use bare h; series U_eff is the cell-centered form"
+  },
+  "S4_Ueff_limits": {
+    "pass": true,
+    "rel_err_hm_limit": 0.0,
+    "rel_err_diff_limit": 1.3552527156068805e-16,
+    "U_eff_hm": 8e-07,
+    "U_eff_D": 0.0001
+  },
+  "S5_kirchhoff_consistency": {
+    "pass": true,
+    "rel_err_Phi_vs_quad": 7.526260396845052e-11,
+    "rel_err_equal_C_degeneracy": 0.0,
+    "D_face_kirchhoff": 2.117006801540324e-14,
+    "harmonic": 2.600988860631082e-16,
+    "arithmetic": 5.16523040409369e-14,
+    "kirchhoff_over_harmonic": 81.39238247359013,
+    "kirchhoff_over_arith": 0.40985718659568326
+  },
+  "S6_ale_rigid_scaling": {
+    "pass": true,
+    "max_dC": 1.9539925233402755e-14,
+    "motion_cancel_resid_max": 0.0,
+    "v_mesh_active_fraction": 1.0,
+    "radius_meta": {
+      "R_start_m": 0.02,
+      "R_end_m": 0.01198,
+      "ptp_cm": 0.8020000000000002,
+      "max_abs_step_cm": 0.12700000000000003,
+      "plateau_start_s": 241200.0
+    }
+  },
+  "S7_first_passage": {
+    "pass": true,
+    "t_end_dt4_s": 1716.4375,
+    "t_end_dt1_s": 1709.8125,
+    "rel_diff": 0.0038746938626311365,
+    "bracket_len_s": 4.0,
+    "rebound_case_detected": true,
+    "no_rebound_main": true
+  },
+  "S8_unit_misuse_probe": {
+    "pass": true,
+    "raised": {
+      "D_app3": true,
+      "D_app4": true
+    },
+    "D_app3_K": 1.3470968217415811e-08,
+    "D_app4_K": 2.5002509122378996e-09,
+    "what_silent_bug_would_give": 7.292827354227798e-37,
+    "ratio_app4_app3": 0.1856029107845028
+  }
+}

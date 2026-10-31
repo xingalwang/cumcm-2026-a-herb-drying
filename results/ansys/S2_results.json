@@ -1,0 +1,115 @@
+{
+  "scope": "appendix3 0..10800 s",
+  "selected_run": "main",
+  "config": {
+    "nr": 100,
+    "nz": 2,
+    "dt_s": 5,
+    "end_s": 10800,
+    "output_dt_s": 10,
+    "length_m": 0.25,
+    "temperature_feedback_in_D": true,
+    "method": "elementwise old-state coefficients, backward Euler, two independent PLANE55 meshes",
+    "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "property_source": "appendix 3 for the entire trajectory",
+    "latent": false,
+    "end_faces": "zero flux",
+    "h": 25,
+    "hm": 8e-07
+  },
+  "status": {
+    "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s2_v0f8sbux",
+    "command": [
+      "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+      "-b",
+      "-smp",
+      "-np",
+      "2",
+      "-p",
+      "ansys",
+      "-dir",
+      "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s2_v0f8sbux",
+      "-j",
+      "s2",
+      "-i",
+      "input.dat",
+      "-o",
+      "solve.out"
+    ],
+    "pid": 27596,
+    "start_epoch": 1789198823.435417,
+    "input_sha256": "5cdf52dd6dc05e36ddcbb7a40a020f937a485effd88e8bb5a17a9e4e4575557c",
+    "success": true,
+    "errors": [
+      "0"
+    ],
+    "warnings": [
+      "2560"
+    ],
+    "returncode": 0,
+    "seconds": 135.16882348060608,
+    "T_center": 49.8490763549332,
+    "T_surface": 49.9662260929493,
+    "C_center": 1.766462219052788,
+    "C_surface": 1.008227146987756,
+    "axial_max_T": 7.034373084024992e-13,
+    "axial_max_C": 1.9095836023552692e-14
+  },
+  "metrics": {
+    "T": {
+      "max_abs_all_output": 0.00789262752103781,
+      "rmse": 0.003189292276866011,
+      "final_max_abs": 0.00043856650205498227,
+      "center": 49.8490763549332,
+      "surface": 49.9662260929493,
+      "reference_center": 49.849480305778776,
+      "reference_surface": 49.96640622263782
+    },
+    "C": {
+      "max_abs_all_output": 0.010068946858698524,
+      "rmse": 0.00018234181061620625,
+      "final_max_abs": 0.0002800142991870036,
+      "center": 1.766462219052788,
+      "surface": 1.008227146987756,
+      "reference_center": 1.766182204753601,
+      "reference_surface": 1.0081228339661739,
+      "volume_average_3h": 1.3826586391826277
+    }
+  },
+  "convergence": {
+    "space_coarse -> main": {
+      "T": {
+        "max_abs": 0.0007754159564825613,
+        "rmse": 9.26933323389667e-05,
+        "final_max_abs": 1.4688771940996048e-05
+      },
+      "C": {
+        "max_abs": 0.014100701954494088,
+        "rmse": 0.0001493613088551997,
+        "final_max_abs": 0.00020011843362088833
+      }
+    },
+    "main -> space_fine": {
+      "T": {
+        "max_abs": 0.0002221745427206656,
+        "rmse": 2.2567772647671943e-05,
+        "final_max_abs": 4.458652078653813e-06
+      },
+      "C": {
+        "max_abs": 0.00421297076506022,
+        "rmse": 3.444647822305786e-05,
+        "final_max_abs": 5.694710834802663e-05
+      }
+    }
+  },
+  "scalar_balance": {
+    "relative_cumulative_error": 0.00026380528040168775,
+    "qualification": "exact step-end check only if output_dt equals dt; otherwise sampled approximation; not true-water-mass validation"
+  },
+  "limitations": [
+    "Lagged two-way coefficients, first-order in time; not a converged nonlinear implicit step.",
+    "MP changes between load steps produce ANSYS non-standard-use warnings; preserved and independently compared.",
+    "Sealed ends, no latent heat, no shrinkage; no physical validation.",
+    "Circle render is reconstructed from r-z axisymmetric field."
+  ]
+}

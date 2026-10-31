@@ -1,0 +1,806 @@
+{
+  "scope": "S1 appendix2, 0-1800 s only",
+  "cases": {
+    "angular_fine_heat": {
+      "config": {
+        "nodes": 13827,
+        "elements": 9216,
+        "radial": 48,
+        "angular": 96,
+        "axial": 2,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.00031393502030468675,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.03141031950890509,
+        "end_area_each_m2": 0.001255740081218747,
+        "side_nodes": 288,
+        "end_nodes": 9218,
+        "dt_s": 2,
+        "end_s": 1800,
+        "ends_open": false,
+        "latent": false,
+        "field": "heat",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": false,
+        "output_dt_s": 2,
+        "element_volume_min": 7.096693709867882e-10,
+        "integrated_volume_m3": 0.0003139350203046866,
+        "integrated_side_area_m2": 0.0314103195089051,
+        "integrated_ends_area_m2": 0.0025114801624374935,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_sivkuzcn",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_sivkuzcn",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 53820,
+        "start_epoch": 1789196098.650019,
+        "input_sha256": "eb2f597bceccfdd16d7d1c4b42d29aae84a79d75129f5e1e80aba4be457c66ec",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "9217"
+        ],
+        "observed_returncode": 0,
+        "center": 33.58041355627392,
+        "surface_mid": 36.78838213110757,
+        "end_center": 33.58041355627794,
+        "corner": 36.78838213110762,
+        "final_min": 33.58041355626926,
+        "final_max": 36.78838213110789,
+        "axial_spread": 9.393374966748524e-12,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 1.8925794520469404e-13,
+        "final_storage_change": 4800.777088054724,
+        "final_boundary_net_integral": 4800.777088055484,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "J",
+        "sensible_input_J": 4800.7770880554845,
+        "latent_consumption_J": 0.0,
+        "minimum_monitored_temperature_C": 28.0000000000008,
+        "latent_power_peak_W": 0.0
+      }
+    },
+    "angular_fine_moisture": {
+      "config": {
+        "nodes": 13827,
+        "elements": 9216,
+        "radial": 48,
+        "angular": 96,
+        "axial": 2,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.00031393502030468675,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.03141031950890509,
+        "end_area_each_m2": 0.001255740081218747,
+        "side_nodes": 288,
+        "end_nodes": 9218,
+        "dt_s": 2,
+        "end_s": 1800,
+        "ends_open": false,
+        "latent": false,
+        "field": "moisture",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": false,
+        "output_dt_s": 2,
+        "element_volume_min": 7.096693709867882e-10,
+        "integrated_volume_m3": 0.0003139350203046866,
+        "integrated_side_area_m2": 0.0314103195089051,
+        "integrated_ends_area_m2": 0.0025114801624374935,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_w9373iij",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_w9373iij",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 21992,
+        "start_epoch": 1789196216.3768196,
+        "input_sha256": "db4d988d44940c3028aa48b806ef6ec0a6c1ac10002ed6140fa8210f245f66e5",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "9217"
+        ],
+        "observed_returncode": 0,
+        "center": 2.549990471840975,
+        "surface_mid": 1.510702127849486,
+        "end_center": 2.549990471840974,
+        "corner": 1.510702127849485,
+        "final_min": 1.510702127849482,
+        "final_max": 2.549990471840975,
+        "axial_spread": 3.1086244689504383e-15,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 2.2308221379477874e-13,
+        "final_storage_change": -8.061693144503345e-05,
+        "final_boundary_net_integral": -8.061693144504839e-05,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "m3 * kg/kg (scalar balance, not physical water mass)"
+      }
+    },
+    "final_heat": {
+      "config": {
+        "nodes": 13827,
+        "elements": 9216,
+        "radial": 48,
+        "angular": 96,
+        "axial": 2,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.00031393502030468675,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.03141031950890509,
+        "end_area_each_m2": 0.001255740081218747,
+        "side_nodes": 288,
+        "end_nodes": 9218,
+        "dt_s": 1,
+        "end_s": 1800,
+        "ends_open": false,
+        "latent": false,
+        "field": "heat",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": false,
+        "output_dt_s": 1,
+        "element_volume_min": 7.096693709867882e-10,
+        "integrated_volume_m3": 0.0003139350203046866,
+        "integrated_side_area_m2": 0.0314103195089051,
+        "integrated_ends_area_m2": 0.0025114801624374935,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_8qet56lm",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_8qet56lm",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 18632,
+        "start_epoch": 1789196573.6165206,
+        "input_sha256": "f48e8d75c5dcf95b83f040c5500eee47a416a66d6db15976f5fcca1dbafbc3d4",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "9217"
+        ],
+        "observed_returncode": 0,
+        "center": 33.5792131575876,
+        "surface_mid": 36.78767459664045,
+        "end_center": 33.57921315758717,
+        "corner": 36.78767459663952,
+        "final_min": 33.57921315757871,
+        "final_max": 36.78767459664057,
+        "axial_spread": 9.620748642191757e-12,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 2.17136352775527e-13,
+        "final_storage_change": 4800.121743359405,
+        "final_boundary_net_integral": 4800.121743360373,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "J",
+        "sensible_input_J": 4800.121743360371,
+        "latent_consumption_J": 0.0,
+        "minimum_monitored_temperature_C": 28.00000000000065,
+        "latent_power_peak_W": 0.0
+      }
+    },
+    "final_moisture": {
+      "config": {
+        "nodes": 13827,
+        "elements": 9216,
+        "radial": 48,
+        "angular": 96,
+        "axial": 2,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.00031393502030468675,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.03141031950890509,
+        "end_area_each_m2": 0.001255740081218747,
+        "side_nodes": 288,
+        "end_nodes": 9218,
+        "dt_s": 1,
+        "end_s": 1800,
+        "ends_open": false,
+        "latent": false,
+        "field": "moisture",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": false,
+        "output_dt_s": 1,
+        "element_volume_min": 7.096693709867882e-10,
+        "integrated_volume_m3": 0.0003139350203046866,
+        "integrated_side_area_m2": 0.0314103195089051,
+        "integrated_ends_area_m2": 0.0025114801624374935,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_v6_fip5r",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_v6_fip5r",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 51792,
+        "start_epoch": 1789196693.0242233,
+        "input_sha256": "73233c88b8d39ddbc8ad891bad76330bc855a7694ff91065969104257014591a",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "9217"
+        ],
+        "observed_returncode": 0,
+        "property_interpolation_max_relative_error": 8.221259708673934e-06,
+        "center": 2.549990758809728,
+        "surface_mid": 1.510614235934154,
+        "end_center": 2.549990758809729,
+        "corner": 1.510614235934154,
+        "final_min": 1.51061423593415,
+        "final_max": 2.549990758809729,
+        "axial_spread": 2.220446049250313e-15,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 2.5383140444363055e-13,
+        "final_storage_change": -8.062168686540408e-05,
+        "final_boundary_net_integral": -8.062168686541895e-05,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "m3 * kg/kg (scalar balance, not physical water mass)"
+      }
+    },
+    "open_ends_heat": {
+      "config": {
+        "nodes": 19041,
+        "elements": 18432,
+        "radial": 24,
+        "angular": 24,
+        "axial": 32,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.0003105828541230249,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.031326286132812374,
+        "end_area_each_m2": 0.0012423314164920997,
+        "side_nodes": 792,
+        "end_nodes": 1154,
+        "dt_s": 2,
+        "end_s": 1800,
+        "ends_open": true,
+        "latent": false,
+        "field": "heat",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": true,
+        "output_dt_s": 2,
+        "element_volume_min": 7.626342860586215e-12,
+        "integrated_volume_m3": 0.0003105828541230249,
+        "integrated_side_area_m2": 0.03132628613281239,
+        "integrated_ends_area_m2": 0.0024846628329841993,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_tr1fp6xz",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_tr1fp6xz",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 28260,
+        "start_epoch": 1789196146.373903,
+        "input_sha256": "dd5e96ad71a61ab9b66aae3336d858d278b104191a522b35119a6accc61c56f4",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "6001"
+        ],
+        "observed_returncode": 0,
+        "center": 33.63611190320303,
+        "surface_mid": 36.80940426038479,
+        "end_center": 37.28169878372945,
+        "corner": 38.9106452083877,
+        "final_min": 33.63611190320303,
+        "final_max": 38.9106452083879,
+        "axial_spread": 3.64558688052675,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 4.774161039485906e-13,
+        "final_storage_change": 4947.377604081656,
+        "final_boundary_net_integral": 4947.377604083997,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "J",
+        "sensible_input_J": 4947.377604083997,
+        "latent_consumption_J": 0.0,
+        "minimum_monitored_temperature_C": 27.99999999999986,
+        "latent_power_peak_W": 0.0
+      }
+    },
+    "radial_coarse_heat": {
+      "config": {
+        "nodes": 3459,
+        "elements": 2304,
+        "radial": 24,
+        "angular": 48,
+        "axial": 2,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.0003132628613281238,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.031393502030468666,
+        "end_area_each_m2": 0.0012530514453124952,
+        "side_nodes": 144,
+        "end_nodes": 2306,
+        "dt_s": 2,
+        "end_s": 1800,
+        "ends_open": false,
+        "latent": false,
+        "field": "heat",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": false,
+        "output_dt_s": 2,
+        "element_volume_min": 5.66519931510636e-09,
+        "integrated_volume_m3": 0.00031326286132812376,
+        "integrated_side_area_m2": 0.03139350203046867,
+        "integrated_ends_area_m2": 0.00250610289062499,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_652_ghr8",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_652_ghr8",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 18832,
+        "start_epoch": 1789195642.0148823,
+        "input_sha256": "c9e82cd2e13217eecd333958927a7e130da785f17e5db380922d3924c936305f",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "2305"
+        ],
+        "observed_returncode": 0,
+        "center": 33.58906168135567,
+        "surface_mid": 36.79260618908013,
+        "end_center": 33.58906168135695,
+        "corner": 36.79260618907981,
+        "final_min": 33.58906168135567,
+        "final_max": 36.7926061890803,
+        "axial_spread": 1.6342482922482304e-12,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 2.6813275439218684e-13,
+        "final_storage_change": 4796.226821381033,
+        "final_boundary_net_integral": 4796.2268213823045,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "J",
+        "sensible_input_J": 4796.226821382294,
+        "latent_consumption_J": 0.0,
+        "minimum_monitored_temperature_C": 28.00000000000003,
+        "latent_power_peak_W": 0.0
+      }
+    },
+    "radial_coarse_moisture": {
+      "config": {
+        "nodes": 3459,
+        "elements": 2304,
+        "radial": 24,
+        "angular": 48,
+        "axial": 2,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.0003132628613281238,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.031393502030468666,
+        "end_area_each_m2": 0.0012530514453124952,
+        "side_nodes": 144,
+        "end_nodes": 2306,
+        "dt_s": 2,
+        "end_s": 1800,
+        "ends_open": false,
+        "latent": false,
+        "field": "moisture",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": false,
+        "output_dt_s": 2,
+        "element_volume_min": 5.66519931510636e-09,
+        "integrated_volume_m3": 0.00031326286132812376,
+        "integrated_side_area_m2": 0.03139350203046867,
+        "integrated_ends_area_m2": 0.00250610289062499,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_ibznm5cc",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_ibznm5cc",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 13368,
+        "start_epoch": 1789195677.7977,
+        "input_sha256": "5361e376b589a8a517fa40e55765dd724510a3f47965b1bf6c8782a5e355b8da",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "2305"
+        ],
+        "observed_returncode": 0,
+        "center": 2.549985496874367,
+        "surface_mid": 1.511586617783097,
+        "end_center": 2.549985496874367,
+        "corner": 1.511586617783097,
+        "final_min": 1.511586617783095,
+        "final_max": 2.549985496874367,
+        "axial_spread": 2.220446049250313e-15,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 2.333029703890296e-13,
+        "final_storage_change": -8.080293723930368e-05,
+        "final_boundary_net_integral": -8.080293723932008e-05,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "m3 * kg/kg (scalar balance, not physical water mass)"
+      }
+    },
+    "radial_fine_heat": {
+      "config": {
+        "nodes": 6915,
+        "elements": 4608,
+        "radial": 48,
+        "angular": 48,
+        "axial": 2,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.0003132628613281238,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.031393502030468666,
+        "end_area_each_m2": 0.0012530514453124952,
+        "side_nodes": 144,
+        "end_nodes": 4610,
+        "dt_s": 2,
+        "end_s": 1800,
+        "ends_open": false,
+        "latent": false,
+        "field": "heat",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": false,
+        "output_dt_s": 2,
+        "element_volume_min": 1.4162998287765908e-09,
+        "integrated_volume_m3": 0.00031326286132812376,
+        "integrated_side_area_m2": 0.03139350203046867,
+        "integrated_ends_area_m2": 0.00250610289062499,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_mbwou6zg",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_mbwou6zg",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 58556,
+        "start_epoch": 1789195859.6197338,
+        "input_sha256": "61c9745d7d31d50f2ca5e708c615d774d8b9bada8fd36ce385d1ae26ab213e30",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "4609"
+        ],
+        "observed_returncode": 0,
+        "center": 33.59213982034798,
+        "surface_mid": 36.79255088167793,
+        "end_center": 33.59213982034532,
+        "corner": 36.79255088167763,
+        "final_min": 33.59213982034368,
+        "final_max": 36.79255088167847,
+        "axial_spread": 5.023537141823908e-12,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 3.42492220566465e-13,
+        "final_storage_change": 4795.867855581314,
+        "final_boundary_net_integral": 4795.867855582872,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "J",
+        "sensible_input_J": 4795.86785558287,
+        "latent_consumption_J": 0.0,
+        "minimum_monitored_temperature_C": 27.99999999999992,
+        "latent_power_peak_W": 0.0
+      }
+    },
+    "radial_fine_moisture": {
+      "config": {
+        "nodes": 6915,
+        "elements": 4608,
+        "radial": 48,
+        "angular": 48,
+        "axial": 2,
+        "radius_m": 0.02,
+        "length_m": 0.25,
+        "polygon_volume_m3": 0.0003132628613281238,
+        "circle_volume_m3": 0.0003141592653589793,
+        "side_area_m2": 0.031393502030468666,
+        "end_area_each_m2": 0.0012530514453124952,
+        "side_nodes": 144,
+        "end_nodes": 4610,
+        "dt_s": 2,
+        "end_s": 1800,
+        "ends_open": false,
+        "latent": false,
+        "field": "moisture",
+        "latent_moisture_history": null,
+        "latent_assumptions": null,
+        "air_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "graded_z": false,
+        "output_dt_s": 2,
+        "element_volume_min": 1.4162998287765908e-09,
+        "integrated_volume_m3": 0.00031326286132812376,
+        "integrated_side_area_m2": 0.03139350203046867,
+        "integrated_ends_area_m2": 0.00250610289062499,
+        "latent_history_sha256": null
+      },
+      "status": {
+        "work": "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_ztcs8bsm",
+        "command": [
+          "E:\\Ansys26R1\\ANSYS Inc\\v261\\ansys\\bin\\winx64\\ANSYS261.exe",
+          "-b",
+          "-smp",
+          "-np",
+          "2",
+          "-p",
+          "ansys",
+          "-dir",
+          "C:\\Users\\xinga\\AppData\\Local\\Temp\\codex_s1_final_ztcs8bsm",
+          "-j",
+          "s1_final",
+          "-i",
+          "input.dat",
+          "-o",
+          "solve.out"
+        ],
+        "pid": 59276,
+        "start_epoch": 1789195916.200765,
+        "input_sha256": "0cb3953fd77061e0961f081c6b339631afe06ae2d72d6d53c5814a0fbcde4908",
+        "success": true,
+        "errors": [
+          "0"
+        ],
+        "warnings": [
+          "4609"
+        ],
+        "observed_returncode": 0,
+        "center": 2.549990129008803,
+        "surface_mid": 1.510607241480977,
+        "end_center": 2.549990129008803,
+        "corner": 1.510607241480977,
+        "final_min": 1.510607241480974,
+        "final_max": 2.549990129008803,
+        "axial_spread": 3.1086244689504383e-15,
+        "volume_verified": true
+      },
+      "balance": {
+        "max_cumulative_relative_residual": 2.1967652365000713e-13,
+        "final_storage_change": -8.057119701157587e-05,
+        "final_boundary_net_integral": -8.057119701158966e-05,
+        "quadrature": "backward-Euler endpoint sum at stored time increments",
+        "units": "m3 * kg/kg (scalar balance, not physical water mass)"
+      }
+    }
+  },
+  "comparisons": {
+    "heat": {
+      "radial_24_to_48": {
+        "max_abs_7_times": 0.0030781389923077995,
+        "final_profile_max_abs": 0.0030781389923077995,
+        "final_center_delta": -0.0030781389923077995,
+        "final_surface_delta": 5.5307402199389344e-05
+      },
+      "angular_48_to_96": {
+        "max_abs_7_times": 0.011726264074063408,
+        "final_profile_max_abs": 0.011726264074063408,
+        "final_center_delta": 0.011726264074063408,
+        "final_surface_delta": 0.004168750570364921
+      },
+      "time_2_to_1": {
+        "max_abs_7_times": 0.0019079431695807614,
+        "final_profile_max_abs": 0.0012003986863149407,
+        "final_center_delta": 0.0012003986863149407,
+        "final_surface_delta": 0.0007075344671179096
+      },
+      "final_vs_FVM": {
+        "max_abs_7_times_midsection": 0.004414013483504675,
+        "rmse_7_times_midsection": 0.0025510763538702744,
+        "final_center_difference": 0.0035699635053916268,
+        "final_surface_difference": 0.0019399738338705674
+      }
+    },
+    "moisture": {
+      "radial_24_to_48": {
+        "max_abs_7_times": 0.021179020636128865,
+        "final_profile_max_abs": 0.001339411936861934,
+        "final_center_delta": -4.632134436022284e-06,
+        "final_surface_delta": 0.000979376302119972
+      },
+      "angular_48_to_96": {
+        "max_abs_7_times": 0.0007838132938511322,
+        "final_profile_max_abs": 0.0007838132938511322,
+        "final_center_delta": -3.4283217198449734e-07,
+        "final_surface_delta": -9.488636850907284e-05
+      },
+      "time_2_to_1": {
+        "max_abs_7_times": 0.00044246002363212966,
+        "final_profile_max_abs": 8.980589552609608e-05,
+        "final_center_delta": -2.869687532047749e-07,
+        "final_surface_delta": 8.789191533220553e-05
+      },
+      "final_vs_FVM": {
+        "max_abs_7_times_midsection": 0.005352149691467467,
+        "rmse_7_times_midsection": 0.0005558213788019197,
+        "final_center_difference": -1.4972755435493923e-06,
+        "final_surface_difference": 0.00033670278683328725
+      }
+    },
+    "2D": {
+      "heat": {
+        "max_abs_all_1800_times": 8.861800704096368e-05,
+        "rmse": 9.429731132137121e-06
+      },
+      "moisture": {
+        "max_abs_all_1800_times": 8.23842174213496e-06,
+        "rmse": 1.4523471868841208e-06
+      },
+      "moisture_refinement": {
+        "N100_dt0.25": 1.510329980950407,
+        "N200_dt0.25": 1.510274015169997,
+        "N400_dt0.25": 1.510260054944309,
+        "N200_dt0.125": 1.510263058916106
+      },
+      "moisture_spatial_difference_ratio": 4.008945246389854
+    }
+  },
+  "cautions": [
+    "Spatial and time convergence is empirical, not a rigorous bound.",
+    "All dimensions use sealed ends and no latent heat in the six-panel main figure.",
+    "Open-end and latent scenarios are separate; no actual material-temperature observations exist.",
+    "Latent closure uses initial dry density and surface evaporation; it is conditional, not a validated constitutive law.",
+    "Mesh aspect-ratio warnings are retained; axial invariance and refinement are checked, not hidden."
+  ]
+}

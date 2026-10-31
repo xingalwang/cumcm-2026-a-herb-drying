@@ -1,0 +1,311 @@
+{
+  "problem": 4,
+  "property_set": "appendix4",
+  "coupling": "two_way",
+  "geometry": "ALE moving boundary x=r/R(t), R from 附件2 (PCHIP)",
+  "props_at_C0": {
+    "rho": 989.5,
+    "cp": 3394.3661971830984,
+    "k": 0.26366197183098594
+  },
+  "capability_checklist_deviation": {
+    "P4-C2(c)_expects_cp": 3395.8,
+    "corrected_cp": 3394.3661971830984,
+    "P4-C2(c)_expects_k": 0.2634,
+    "corrected_k": 0.26366197183098594,
+    "note": "CAPABILITY_CHECKLIST 携带 §0 修正前的上游值；第二项自变量应为 C/(C+1)=51/71"
+  },
+  "D_app4_at_C0_50C": 2.5002509122378996e-09,
+  "D_ratio_app4_over_app3": 0.1856029107845028,
+  "radius": {
+    "R_start_m": 0.02,
+    "R_end_m": 0.01198,
+    "ptp_cm": 0.8020000000000002,
+    "max_abs_step_cm": 0.12700000000000003,
+    "plateau_start_s": 241200.0,
+    "monotone_nonincreasing": true,
+    "min_cm": 1.198,
+    "max_cm": 2.0,
+    "Rdot_max_abs_m_s": 8.388888888888892e-07,
+    "t_at_Rdot_max_s": 0.0,
+    "diffusion_velocity_D_over_R0_m_s": 1.2501254561189499e-07,
+    "Pe_shrink": 6.710437618743033,
+    "area_ratio_R0_over_Rend_sq": 2.787060236732897,
+    "shrink_pct": 40.1
+  },
+  "t_end_s": 183919.5625,
+  "t_end_h": 51.0888,
+  "t_end_h_full": 51.08876736111111,
+  "t_end_days": 2.1286986400462964,
+  "R_at_t_end_cm": 1.2,
+  "bracket_s": [
+    183918.0,
+    183920.0
+  ],
+  "no_rebound_to_1.05t_end": true,
+  "argmax_center_strict": false,
+  "argmax_center_within_tol": true,
+  "C_hump_excess_max": 8.43769498715119e-15,
+  "final_profile_max_diff": -1.153665246861335e-06,
+  "motion_terms_cancel_resid_max": 0.0,
+  "v_mesh_active_step_fraction": 0.46596864060978893,
+  "n_steps": 96558,
+  "dt_solve_s": 2.0,
+  "dt_out_s": 60.0,
+  "N_cells": 200,
+  "surface_form": "node",
+  "water_resid_max": 8.263373311220036e-12,
+  "n_picard_max": 4,
+  "D_field_ratio_max": 4.605670575208461,
+  "at_t_end": {
+    "max_C": 0.1499999990681769,
+    "C_bar": 0.11839488595608601,
+    "C_center": 0.1499999990681769,
+    "C_surface": 0.05261937464075347,
+    "T_center_C": 49.99999999999959,
+    "g_at_t_end": -9.318230909105552e-10
+  },
+  "v_mesh_span_integrated_s": 193116.0,
+  "v_mesh_active_fraction_expected_from_data": 0.4660411358975952,
+  "v_mesh_active_fraction_abs_diff": 7.249528780628456e-05,
+  "R_shrink_during_solve_cm": 0.8,
+  "P4C1c_frozen_radius": {
+    "t_end_frozen_R_h": 129.84682291666667,
+    "t_end_ale_h": 51.08876736111111,
+    "rel_change": 0.6065458806497025,
+    "rel_change_pct": 60.65458806497025,
+    "shrink_shortens_drying": true,
+    "cap_used_s": 3000000.0,
+    "note": "冻结半径下 t_end 超出 §6.3 的 120 h 时窗，说明收缩不是小扰动而是干燥能在 5 天内完成的必要条件"
+  },
+  "vs_problem3": {
+    "t_end_q3_h": 57.47449652777778,
+    "t_end_q4_h": 51.08876736111111,
+    "ratio_q4_over_q3": 0.888894561023594,
+    "diff_h": -6.385729166666671,
+    "competing_mechanisms": {
+      "D4_over_D3_at_C0_50C": 0.1856029107845028,
+      "geometric_enhancement_area_ratio": 2.787060236732897
+    }
+  },
+  "P4C2e_no_inversion": {
+    "radius_plateau_start_h": 67.0,
+    "t_end_h": 51.08876736111111,
+    "gap_from_plateau_h": 15.91123263888889,
+    "note": "附件2 首次达 1.198 cm 的 67.0 h 与干燥终点无因果关系；t_end 由水分方程积分产生，附件2 只经 1/R(t)^2 进入几何因子"
+  },
+  "radius_extrapolation": {
+    "radius_data_covers_until_s": 259200.0,
+    "t_end_beyond_radius_data": false,
+    "extrapolated_fraction_pct": 0.0,
+    "mode": "hold R=1.198 cm (禁止趋势外推：末段已进入平台，外推会给出负半径方向)"
+  },
+  "air_extrapolation": {
+    "measured_until_s": 14400.0,
+    "hold_T_air_C": 50.0,
+    "hold_C_air": 0.05,
+    "extrapolated_fraction_pct": 92.17049029246141
+  },
+  "no_shrink_two_implementations_max_dC": 0.0,
+  "dry_mass_consistency": {
+    "rho_dry_at_C0_kg_m3": 278.7323943661972,
+    "rho_dry_at_Cthr_kg_m3": 672.608695652174,
+    "R_predicted_end_cm": 1.2874858941794518,
+    "R_measured_end_cm": 1.198,
+    "rel_gap_pct": 7.469607193610339,
+    "note": "拉格朗日模型由干物质守恒自行预测 R(t)，与实测差异是题面数据内在不一致（DATA_FACTS F1），非实现错误；ALE 主模型中 rho_d 被完全消去，不受影响"
+  },
+  "convergence": {
+    "N_list": [
+      100,
+      200,
+      400,
+      800
+    ],
+    "dt_list": [
+      8.0,
+      4.0,
+      2.0,
+      1.0
+    ],
+    "grid_t_end_h": {
+      "values": [
+        51.08994791666667,
+        51.08876736111111,
+        51.088489583333335,
+        51.088420138888885
+      ],
+      "diffs": [
+        -0.0011805555555568503,
+        -0.00027777777777515666,
+        -6.944444444911824e-05
+      ],
+      "ratio": [
+        4.250000000044764,
+        3.9999999996930455
+      ],
+      "rel_change": [
+        2.3107927956302427e-05,
+        5.4371890819370885e-06,
+        1.359299118280164e-06
+      ],
+      "last_rel_change_pct": 0.0001359299118280164
+    },
+    "dt_t_end_h": {
+      "values": [
+        51.09272569444445,
+        51.09008680555556,
+        51.08876736111111,
+        51.08814236111111
+      ],
+      "diffs": [
+        -0.0026388888888888573,
+        -0.0013194444444479814,
+        -0.0006249999999994316
+      ],
+      "ratio": [
+        1.9999999999946148,
+        2.1111111111186904
+      ],
+      "rel_change": [
+        5.165168144912808e-05,
+        2.5826507715908324e-05,
+        1.2233758581035996e-05
+      ],
+      "last_rel_change_pct": 0.0012233758581035995
+    }
+  },
+  "result_file": "result4.xlsx",
+  "result_shape": [
+    3066,
+    22
+  ],
+  "result_last_time_s": 183960.0,
+  "result_last_column_name": "药材表面",
+  "blank_cells_total": 20101,
+  "blank_cols_in_last_row": 7,
+  "R_at_last_row_cm": 1.2,
+  "paper_table_radii_cm": [
+    0.0,
+    0.5,
+    1.0,
+    1.5
+  ],
+  "paper_table_last_column": "药材表面",
+  "paper_table_rows": [
+    {
+      "t_h": 0.0,
+      "R_cm": 2.0,
+      "values": [
+        2.55,
+        2.55,
+        2.55,
+        2.55
+      ],
+      "surface": 2.55
+    },
+    {
+      "t_h": 6.0,
+      "R_cm": 1.374,
+      "values": [
+        1.7187775570867128,
+        1.5359399850298212,
+        1.0181488238902032,
+        null
+      ],
+      "surface": 0.42051629994101786
+    },
+    {
+      "t_h": 12.0,
+      "R_cm": 1.248,
+      "values": [
+        0.7373825777869872,
+        0.6546425488916918,
+        0.40927366232086854,
+        null
+      ],
+      "surface": 0.16688876416508477
+    },
+    {
+      "t_h": 18.0,
+      "R_cm": 1.214,
+      "values": [
+        0.4086564759872597,
+        0.36893319792157986,
+        0.2390918250751462,
+        null
+      ],
+      "surface": 0.08917229929472119
+    },
+    {
+      "t_h": 24.0,
+      "R_cm": 1.204,
+      "values": [
+        0.2850787644011029,
+        0.2610591505221897,
+        0.17914984752882046,
+        null
+      ],
+      "surface": 0.06733198968549718
+    },
+    {
+      "t_h": 30.0,
+      "R_cm": 1.201,
+      "values": [
+        0.226304849086792,
+        0.20947745677784632,
+        0.14868538429045844,
+        null
+      ],
+      "surface": 0.05948885298474598
+    },
+    {
+      "t_h": 36.0,
+      "R_cm": 1.2,
+      "values": [
+        0.1928057170738556,
+        0.17975406464255367,
+        0.13132496905036367,
+        null
+      ],
+      "surface": 0.05596327882919735
+    },
+    {
+      "t_h": 42.0,
+      "R_cm": 1.2,
+      "values": [
+        0.1712295630029349,
+        0.16045626047232328,
+        0.11969220682041397,
+        null
+      ],
+      "surface": 0.05410548286660219
+    },
+    {
+      "t_h": 48.0,
+      "R_cm": 1.2,
+      "values": [
+        0.15614259255645144,
+        0.1468810851990209,
+        0.11131189126551001,
+        null
+      ],
+      "surface": 0.053013624861244245
+    },
+    {
+      "t_h": 51.08876736111111,
+      "R_cm": 1.2,
+      "values": [
+        0.1499999990681769,
+        0.1413332715962063,
+        0.1078360652475093,
+        null
+      ],
+      "surface": 0.05261937464075347,
+      "is_t_end": true
+    }
+  ],
+  "paper_table_last_row_max_C": 0.1499999990681769,
+  "r_1p5cm_column_blank_from_h": 3.64176,
+  "wall_time_s": 1337.9833467006683
+}
