@@ -16,7 +16,7 @@ Coupled heat and mass transfer · Finite volume method · ALE moving boundary ·
 
 How does a cylindrical medicinal herb heat up and lose moisture in hot air? How long does drying take when shrinkage is included? This project tackles these questions through four progressively extended models, with a **paper PDF, the complete problem materials, Python solvers, and result spreadsheets for all four tasks** to support learning, reproduction, and further research.
 
-> ⭐ If this project helps you with mathematical modeling, heat and mass transfer, or numerical computing, please give it a **[Star](https://github.com/xingalwang/herb-drying-model)**. It supports the project and makes it easier to find again.
+> ★ If this project helps you with mathematical modeling, heat and mass transfer, or numerical computing, please give it a **[Star](https://github.com/xingalwang/herb-drying-model)**. It supports the project and makes it easier to find again.
 
 ## Highlights
 
@@ -106,7 +106,7 @@ Runtime-check environment: Python 3.12.3, NumPy 2.5.4, SciPy 1.18.1, pandas 3.1.
 
 Use [Issues](https://github.com/xingalwang/herb-drying-model/issues) to report reproduction problems, discuss assumptions, or share improvements. If you use this project for learning or research, please cite the paper title and link to this repository.
 
-Found it useful? A **⭐ Star** in the top-right corner is always welcome. Thank you for your interest and support!
+Found it useful? A **★ Star** in the top-right corner is always welcome. Thank you for your interest and support!
 
 ## License and sources
 

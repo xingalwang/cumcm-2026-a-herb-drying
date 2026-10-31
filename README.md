@@ -16,7 +16,7 @@
 
 圆柱药材在热风中怎样升温、失水？考虑收缩后，又需要多久才能烘干？本项目用四个逐步扩展的模型回答这些问题，并提供**论文 PDF、完整赛题、Python 求解代码和四问结果表**，方便学习、复算和进一步研究。
 
-> ⭐ 如果这个项目对你的数学建模、传热传质学习或数值计算有帮助，欢迎点一个 **[Star](https://github.com/xingalwang/herb-drying-model)**，支持这个项目，也方便以后再找到它。
+> ★ 如果这个项目对你的数学建模、传热传质学习或数值计算有帮助，欢迎点一个 **[Star](https://github.com/xingalwang/herb-drying-model)**，支持这个项目，也方便以后再找到它。
 
 ## 项目亮点
 
@@ -106,7 +106,7 @@ python codes/main.py --analysis-global --quick
 
 欢迎通过 [Issues](https://github.com/xingalwang/herb-drying-model/issues) 反馈复现问题、讨论模型假设，或分享你的改进。若使用本项目进行学习或研究，请注明论文标题及本仓库链接。
 
-觉得有用的话，也欢迎点亮右上角的 **⭐ Star**。感谢你的关注与支持！
+觉得有用的话，也欢迎点亮右上角的 **★ Star**。感谢你的关注与支持！
 
 ## 授权与来源
 
