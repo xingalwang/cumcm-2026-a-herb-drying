@@ -1,6 +1,6 @@
 <div align="center">
 
-# Herb Hot-Air Drying Model
+# CUMCM 2026 · Problem A: Herb Drying
 
 **From temperature and moisture fields to drying-time prediction.**
 
@@ -14,9 +14,11 @@ Coupled heat and mass transfer · Finite volume method · ALE moving boundary ·
 
 ---
 
+Paper and code for **Problem A, “Drying of Medicinal Herbs,” from the 2026 Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM), China’s national undergraduate mathematical modeling contest**. See the [official CUMCM website](https://en.mcm.edu.cn/).
+
 How does a cylindrical medicinal herb heat up and lose moisture in hot air? How long does drying take when shrinkage is included? This project tackles these questions through four progressively extended models, with a **paper PDF, the complete problem materials, Python solvers, and result spreadsheets for all four tasks** to support learning, reproduction, and further research.
 
-> ★ If this project helps you with mathematical modeling, heat and mass transfer, or numerical computing, please give it a **[Star](https://github.com/xingalwang/herb-drying-model)**. It supports the project and makes it easier to find again.
+> ★ If this project helps you with mathematical modeling, heat and mass transfer, or numerical computing, please give it a **[Star](https://github.com/xingalwang/cumcm-2026-a-herb-drying)**. It supports the project and makes it easier to find again.
 
 ## Highlights
 
@@ -104,7 +106,7 @@ Runtime-check environment: Python 3.12.3, NumPy 2.5.4, SciPy 1.18.1, pandas 3.1.
 
 ## Discussion and support
 
-Use [Issues](https://github.com/xingalwang/herb-drying-model/issues) to report reproduction problems, discuss assumptions, or share improvements. If you use this project for learning or research, please cite the paper title and link to this repository.
+Use [Issues](https://github.com/xingalwang/cumcm-2026-a-herb-drying/issues) to report reproduction problems, discuss assumptions, or share improvements. If you use this project for learning or research, please cite the paper title and link to this repository.
 
 Found it useful? A **★ Star** in the top-right corner is always welcome. Thank you for your interest and support!
 
